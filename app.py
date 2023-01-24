@@ -17,8 +17,6 @@ def get_audio(link):
         print("Some Error!")
     print('Task Completed!')
 
-import insta
-import bf
 bot = telebot.TeleBot("5444195255:AAFdov1TjVD9YOHyeOn8dYIqgjqIGLlBdUs")
 
 @bot.message_handler(commands=['start', 'help'])
@@ -29,7 +27,7 @@ def send_welcome(message):
 @bot.message_handler(content_types=['text'])
 def echo_all(message):
     #if(message.text[:31] == "https://www.youtube.com/"):
-        data = bf.get_audio(message.text)
+        data = get_audio(message.text)
         if data == False:
             bot.reply_to(message, "The link that you have shared is on Privet Account! We have no Access !")
         else:
