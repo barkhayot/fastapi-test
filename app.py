@@ -38,4 +38,4 @@ def echo_all(message):
             bot.send_audio(message.chat.id, file, timeout=10000)
     #else:
 	    #bot.reply_to(message, "Your Link is not valid! Please send Valid Link !")
-bot.infinity_polling()
+bot.infinity_polling(timeout=30)
