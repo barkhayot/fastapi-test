@@ -17,7 +17,7 @@ def get_audio(link):
         print("Some Error!")
     print('Task Completed!')
 
-bot = telebot.TeleBot("5635788651:AAE3ao8is0t2uajf-hteINZoeptPfhtSByg")
+bot = telebot.TeleBot("test")
 bot.set_webhook()
 
 @bot.message_handler(commands=['start', 'help'])
